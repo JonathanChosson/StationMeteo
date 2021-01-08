@@ -1,0 +1,28 @@
+html{
+    height:100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
+    width : auto;
+    height:100%;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    & * {
+        margin: 0px;
+        padding: 0px;
+    }
+    &.jour{
+        background: $background_jour;
+    }
+    &.nuit{
+        background: $background_nuit;
+    }
+}

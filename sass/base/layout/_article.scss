@@ -1,0 +1,101 @@
+.article{
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    &__divHome{
+        -webkit-box-shadow: 1px 5px 15px 1px rgba(0,0,0,0.61); 
+        box-shadow: 1px 5px 15px 1px  rgba(0,0,0,0.61);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        background: $background_gris;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width : 100%;
+        &__span{
+            font-size: 4.2em;
+        }
+        & p {
+            font-size: 1.3em;
+            padding: 2px;
+        }
+        &__divTemp{
+            display: flex;
+            flex-flow: row wrap;
+            width: 50%;
+            margin: 2px;
+            padding: 5px;
+            & :nth-child(1){
+                width: 45%;
+            }
+            & :nth-child(2){
+                width: 45%;
+            }
+        }
+        &__divPression{
+            text-align: center;
+            justify-content: center;
+            flex: 1 100%;
+            display: flex;
+            flex-flow: row wrap;
+            width:100%;
+            margin: 2px;
+            padding: 5px;
+            & p{
+                padding: 5px;
+            }
+        }
+    }
+    &__divCapteur{
+        -webkit-box-shadow: 1px 5px 15px 1px rgba(0,0,0,0.61); 
+        box-shadow: 1px 5px 15px 1px rgba(0,0,0,0.61);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        background: $background_gris;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width : 100%;
+        &__span{
+            font-size: 4.2em;
+            width: 15%;
+        }
+        & p {
+            font-size: 1.3em;
+            padding: 2px;
+        }
+        &__divTemp{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            justify-content: space-around;
+            width: 40%;
+            margin: 2px;
+            padding: 5px;
+        }
+        &__divInfos{
+            width: 30%;
+        }
+    }
+    &__divPluviometre{
+        -webkit-box-shadow: 1px 5px 15px 1px  rgba(0,0,0,0.61); 
+        box-shadow: 1px 5px 15px 1px  rgba(0,0,0,0.61);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        background: $background_gris;
+        border-radius: 10px;
+        width : 100%;
+        &__span{
+            font-size: 4.2em;
+        }
+        & p {
+            font-size: 1.3em;
+            padding: 2px;
+        }
+    }
+}

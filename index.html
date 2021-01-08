@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/0c9cc5d14e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>Ma Station Météo</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <!-- header -->
+        <header class="header">
+            <h1 class="header__h1">
+                Station météo de Marches
+            </h1>
+            <a class="header__a" href="./index.html" alt="Raffraichir"><span class="fas fa-sync-alt header__a__span"></span></a>
+        </header>
+        <!-- article -->
+        <article class="article">
+            <!-- Affiche données maison -->
+            <div class="article__divHome">
+                <span class="fas fa-home article__divHome__span"></span>
+                <div class="article__divHome__divTemp">
+                    <p class="article__divHome__p--temp" id="tempHome">25 °</p>
+                    <p class="article__divHome__p--tempTendance" id="tempTendanceHome"><span class="fas fa-arrow-right"></span></p>
+                    <p class="article__divHome__p--tempMax" id="tempMaxHome">Max : 30°</p>
+                    <p class="article__divHome__p--tempMin" id="tempMinHome">Min : 20°</p>
+                </div>
+                <div class="article__divHome__divPression">
+                    <p class="article__divHome__P--tempPression" id="tempPressionHome">Pression : 1017 mbar</p>
+                    <p class="article__divHome__p--tempPressionTendance" id="tempPressionTendanceHome"><span class="fas fa-arrow-right"></span></p>
+                </div>
+                <p class="article__divHome__p--tempHumidite" id="tempHumiditeHome"><span class="fas fa-tint"></span> : 40 %</p>
+                <p class="article__divHome__p--tempBruit" id="tempBruitHome"><span class="fas fa-volume-up"></span> : 45 db</p>
+            </div>
+            <!-- affiche les données capteur extérieur -->
+            <div class="article__divCapteur">
+                <span class="fas fa-tree article__divCapteur__span"></span>
+                <div class="article__divCapteur__divTemp">
+                    <p class="article__divCapteur__p--temp" id="tempCapteur">25 °</p>
+                    <p class="article__diCapteur__p--tempTendance" id="tempTendanceCapteur"><span class="fas fa-arrow-right"></span></p>
+                    <p class="article__divCapteur__p--tempMax" id="tempMaxCapteur">Max : 30°</p>
+                    <p class="article__divCapteur__p--tempMin" id="tempMinCapteur">Min : 20°</p>
+                </div>
+                <div class="article__divCapteur__divInfos">
+                    <p class="article__divCapteur__p--tempHumidite" id="tempHumiditeCapteur"><span class="fas fa-tint"></span> : 40 %</p>
+                    <p class="article__divCapteur__p--tempBatterieCapteur" id="tempBatterieCapteur"><span class="fas fa-battery-three-quarters"></span> : 45 %</p>
+                </div>
+            </div>
+            <!-- affiche les données du pluviometre -->
+            <div class="article__divPluviometre">
+                <span class="fas fa-umbrella article__divPluviometre__span"></span>
+                <div class="article__divPluviometre__divPluie">
+                    <p class="article__divPluviometre__divPluie__p--maintenant" id="pluieMaintenant">Maintenant : 0.0 mm/h</p>
+                    <p class="article__divPluviometre__divPluie__p--cumul" id="pluieCumulé">Cumulé (24h) : 0.0 mm/h</p>
+                    <p class="article__divPluviometre__divPluie__p--prevu" id="pluiePrévu">Prévu : 0.0 mm/h</p>
+                </div>
+                <p class="article__divPluviometre__p--tempBatteriePluie" id="tempBatteriePluie"><span class="fas fa-battery-three-quarters"></span> : 00 %</p>
+            </div>
+        </article>
+    </main>
+    <!-- script -->
+    <script src="./js/api.js" ></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/dom.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+</body>
+</html>
