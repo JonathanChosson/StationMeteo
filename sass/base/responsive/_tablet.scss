@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px){
+    
+}
+
+@media screen and (min-width: 700px){
+    .article{
+        &__divHome{
+            width : 49%;
+            margin-right: 1%;
+        }
+        &__divCapteur{
+            width: 50%;
+        }
+        &__divPluviometre{
+            width: 100%;
+        }
+        & p {
+            font-size: 1.8em;
+            padding: 2px;
+        }
+    }
+}
